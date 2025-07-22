@@ -1,0 +1,22 @@
+{
+  "name": "core-renderer",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@theline/shared": "workspace:*",
+    "@theline/plugins-dragdrop": "workspace:*",
+    "@theline/plugins-interact": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vite": "^7.0.5"
+  }
+}

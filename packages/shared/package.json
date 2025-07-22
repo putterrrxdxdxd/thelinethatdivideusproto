@@ -1,0 +1,39 @@
+{
+  "name": "@theline/shared",
+  "version": "1.0.0",
+  "description": "Shared state, socket, and types for The Line That Divide Us",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "clean": "tsc --build --clean"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "keywords": [
+    "shared",
+    "theline",
+    "turbo",
+    "state",
+    "socket"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "socket.io-client": "^4.8.1",
+    "vue": "^3.5.17"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "@types/node": "^22.15.3"
+  }
+}

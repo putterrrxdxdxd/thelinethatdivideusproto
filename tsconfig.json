@@ -1,0 +1,18 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/plugins-dragdrop" },
+    { "path": "packages/plugins-interact" },
+    { "path": "packages/plugins-filters" },
+    { "path": "packages/plugins-gas" },
+    { "path": "packages/plugins-audio" },
+    { "path": "packages/plugins-video" },
+    { "path": "packages/plugins-image" },
+    { "path": "packages/shared" },
+    { "path": "packages/ui" },
+    { "path": "apps/core-renderer" },
+    { "path": "apps/backend" },
+    { "path": "apps/web" },
+    { "path": "apps/docs" }
+  ]
+}

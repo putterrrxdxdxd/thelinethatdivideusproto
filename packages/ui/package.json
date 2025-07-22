@@ -2,22 +2,38 @@
   "name": "@repo/ui",
   "version": "0.0.0",
   "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "exports": {
-    "./*": "./src/*.tsx"
+    "./button": {
+      "import": "./dist/button.js",
+      "require": "./dist/button.js"
+    },
+    "./card": {
+      "import": "./dist/card.js",
+      "require": "./dist/card.js"
+    },
+    "./code": {
+      "import": "./dist/code.js",
+      "require": "./dist/code.js"
+    }
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "clean": "tsc --build --clean"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/node": "^22.15.3",
-    "@types/react": "19.1.0",
-    "@types/react-dom": "19.1.1",
-    "eslint": "^9.30.0",
-    "typescript": "5.8.2"
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.1",
+    "eslint": "^9.31.0",
+    "typescript": "^5.8.3"
   },
   "dependencies": {
     "react": "^19.1.0",

@@ -1,0 +1,22 @@
+{
+  "name": "@theline/plugins-filters",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "clean": "tsc --build --clean"
+  },
+  "dependencies": {
+    "@theline/shared": "workspace:*"
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "@theline/plugins-webcam",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": ["dist"],
+    "scripts": {
+      "build": "tsc -p tsconfig.json",
+      "dev": "tsc -p tsconfig.json --watch",
+      "clean": "tsc --build --clean"
+    },
+    "dependencies": {
+      "@daily-co/daily-js": "^0.44.1"
+    }
+  }
+  
