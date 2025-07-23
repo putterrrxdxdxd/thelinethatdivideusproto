@@ -10,11 +10,6 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "target": "ESNext",
-    "typeRoots": [
-      "../../shared/dist",
-      "../../node_modules/@types",
-      "../../node_modules"
-    ],
     "baseUrl": ".",
     "paths": {
       "@theline/shared": ["../../shared/dist"]
