@@ -1,4 +1,4 @@
-import { setupWebcam, teardownWebcam } from './utils';
+import { setupWebcam, teardownWebcam } from './utils.js';
 
 const WebcamPlugin = {
   mount(container: HTMLElement) {

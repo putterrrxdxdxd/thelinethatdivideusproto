@@ -1,4 +1,4 @@
-import { setupFilters, teardownFilters, updateFiltersForElement, resetFiltersForElement } from './utils';
+import { setupFilters, teardownFilters, updateFiltersForElement, resetFiltersForElement } from './utils.js';
 
 const FiltersPlugin = {
   mount(container: HTMLElement) {

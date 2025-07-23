@@ -1,6 +1,6 @@
 import { stageState } from '@theline/shared';
 import type { StageElement } from '@theline/shared';
-import { setupImageElement, teardownImageElement } from './utils';
+import { setupImageElement, teardownImageElement } from './utils.js';
 
 const ImagePlugin = {
   mount(container: HTMLElement) {

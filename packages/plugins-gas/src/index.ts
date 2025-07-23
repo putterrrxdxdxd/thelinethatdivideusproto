@@ -5,7 +5,7 @@ import {
     calm,
     updateElementGas,
     resetElementGas
-  } from './utils';
+  } from './utils.js';
   
   const GasPlugin = {
     mount(container: HTMLElement) {

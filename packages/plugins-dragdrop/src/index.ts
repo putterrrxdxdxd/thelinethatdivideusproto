@@ -1,4 +1,4 @@
-import { setupDropZone, teardownDropZone } from './utils';
+import { setupDropZone, teardownDropZone } from './utils.js';
 
 const DragDropPlugin = {
   mount(container: HTMLElement) {

@@ -1,5 +1,5 @@
 import { stageState } from '@theline/shared';
-import type { FiltersState } from './index';
+import type { FiltersState } from './index.js';
 
 let filtersContainer: HTMLElement | null = null;
 

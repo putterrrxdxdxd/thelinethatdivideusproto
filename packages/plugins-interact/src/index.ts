@@ -1,5 +1,5 @@
 import interact from 'interactjs';
-import { setupInteract, teardownInteract } from './utils';
+import { setupInteract, teardownInteract } from './utils.js';
 
 const InteractPlugin = {
   mount(container: HTMLElement) {

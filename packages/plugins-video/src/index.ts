@@ -1,6 +1,6 @@
 import { stageState } from '@theline/shared';
 import type { StageElement } from '@theline/shared';
-import { setupVideo, teardownVideo } from './utils';
+import { setupVideo, teardownVideo } from './utils.js';
 
 const VideoPlugin = {
   mount(container: HTMLElement) {
