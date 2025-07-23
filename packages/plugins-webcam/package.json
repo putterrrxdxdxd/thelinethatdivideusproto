@@ -5,6 +5,7 @@
     "types": "dist/index.d.ts",
     "files": ["dist"],
     "scripts": {
+      "prebuild": "rm -rf dist",
       "build": "tsc -p tsconfig.json",
       "dev": "tsc -p tsconfig.json --watch",
       "clean": "tsc --build --clean"

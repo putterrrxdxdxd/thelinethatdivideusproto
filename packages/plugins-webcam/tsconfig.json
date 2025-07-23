@@ -1,12 +1,26 @@
 {
-    "extends": "../../tsconfig.json",
-    "compilerOptions": {
-      "outDir": "dist"
-    },
-    "include": ["src"],
-    "exclude": ["node_modules", "dist"],
-    "references": [
-      { "path": "../../packages/shared" }
-    ]
-  }
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": false,
+    "composite": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ESNext",
+    "typeRoots": [
+      "../../shared/dist",
+      "../../node_modules/@types",
+      "../../node_modules"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@theline/shared": ["../../shared/dist"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
   
