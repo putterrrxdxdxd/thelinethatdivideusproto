@@ -10,4 +10,7 @@ export * from './socket.js';
 export * from './state.js';
 // @ts-ignore
 export * from './types.js';
+export { stageState } from './state.js';
+export type { StageElement } from './types.js';
+export { emit } from './socket.js';
 
