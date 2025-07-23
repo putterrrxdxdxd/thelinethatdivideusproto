@@ -10,7 +10,9 @@ const withTranspileModules = withTM([
   '@theline/plugins-interact',
   '@theline/plugins-video',
   '@theline/plugins-webcam'
-]);
+], {
+  resolveSymlinks: true
+});
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
