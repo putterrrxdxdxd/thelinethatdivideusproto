@@ -18,5 +18,8 @@
   },
   "dependencies": {
     "@theline/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "5.2.2"
   }
 }
