@@ -1,6 +1,5 @@
 // @ts-ignore
 import DailyIframe, { DailyCall } from '@daily-co/daily-js';
-// @ts-ignore
 import { emit } from '@theline/shared';
 
 let call: DailyCall | null = null;
