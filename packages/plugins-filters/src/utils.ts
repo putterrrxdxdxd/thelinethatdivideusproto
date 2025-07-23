@@ -14,7 +14,7 @@ export function setupFilters(container: HTMLElement) {
   }
 
   // Apply filters to all elements that already have metadata.filters
-  Object.values(stageState.elements).forEach((el) => {
+  Object.values(stageState.elements).forEach((el: any) => {
     const filters = (el.metadata.filters ?? {}) as Partial<FiltersState>;
     // Ensure invert is boolean or undefined
     const safeFilters: Partial<FiltersState> = {
