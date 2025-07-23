@@ -155,6 +155,30 @@ importers:
       '@theline/core-renderer':
         specifier: workspace:*
         version: link:../core-renderer
+      '@theline/plugins-audio':
+        specifier: workspace:*
+        version: link:../../packages/plugins-audio
+      '@theline/plugins-dragdrop':
+        specifier: workspace:*
+        version: link:../../packages/plugins-dragdrop
+      '@theline/plugins-filters':
+        specifier: workspace:*
+        version: link:../../packages/plugins-filters
+      '@theline/plugins-gas':
+        specifier: workspace:*
+        version: link:../../packages/plugins-gas
+      '@theline/plugins-image':
+        specifier: workspace:*
+        version: link:../../packages/plugins-image
+      '@theline/plugins-interact':
+        specifier: workspace:*
+        version: link:../../packages/plugins-interact
+      '@theline/plugins-video':
+        specifier: workspace:*
+        version: link:../../packages/plugins-video
+      '@theline/plugins-webcam':
+        specifier: workspace:*
+        version: link:../../packages/plugins-webcam
       '@theline/shared':
         specifier: workspace:*
         version: link:../../packages/shared
