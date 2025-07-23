@@ -1,3 +1,62 @@
+Hey this is my attempt at coding for the first time, so sry for shitty codes haha, i also heavily depend on GPT to help
+because turnsout i dont know how to
+
+ofc i graduated libarts and too lazy to learn it rn
+but i will tho as time goes on,
+
+I am sarunpat iamsuro, a theatre artist from thailand
+i think this is now gonna be kind of my dev logs i guess, but i am compliling this now late
+at night
+and a little bi sleep deprived
+so
+yea haha
+
+this is kinda my on-going development of my prototype for a cyberspace for cyberperformance
+its supposed to be very democratic and somewhat anarchal platform
+where anybody can do anything on it and also in the same time
+has some ties that connect back to the physical world
+and my idea is to try to challange and bargain the concept of self, the autonomy/authority of self and the concept of
+Boarders
+
+all boarders
+like from self to other/ audience to perfromer and also the border of the country itself
+
+i got inspired from my current residency of arts in cambodia by Creative Generations in July 2025
+which is also the time that the conflict of cambodia and thailand is boiling hard again,
+
+and people on both countries at least on the internet, has been bashing the shit out of each others hard
+
+i mean it happend since long time ago since 2003
+
+but that's political stuff so i will just omit here for safety of all
+
+i will omit it
+for 
+safety 
+of all
+here
+
+i have to omit 
+for safety 
+of all
+
+so if interested, just email me or whatevs
+
+but yea,
+
+that kinda inspires me to go like yea, how are we gonna challange all that narratives without hurting or compromis poeple safety,
+
+so i thik that this thing is interesting, like it challanges all that
+
+imagine like border closed, but performance across baorder goes brrrrr
+
+yea like that,
+
+i am too tired to type more tonight, so bye. 24 jul 2025
+
+
+
+
 # Turborepo starter
 
 This Turborepo starter is maintained by the Turborepo core team.
