@@ -6,10 +6,12 @@ let filtersContainer: HTMLElement | null = null;
 export function setupFilters(container: HTMLElement) {
   filtersContainer = container;
 
-  Array.from(container.querySelectorAll('[data-stage-element]')).forEach((el) => {
-    (el as HTMLElement).style.filter = '';
-    (el as HTMLElement).style.opacity = '1';
-  });
+  const nodeList = container.querySelectorAll('[data-stage-element]');
+  for (let i = 0; i < nodeList.length; i++) {
+    const el = nodeList[i] as HTMLElement;
+    el.style.filter = '';
+    el.style.opacity = '1';
+  }
 
   // Apply filters to all elements that already have metadata.filters
   Object.values(stageState.elements).forEach((el) => {
@@ -84,10 +86,12 @@ function applyFiltersToElement(elementId: string, filters: Partial<FiltersState>
 function clearAllFilters() {
   if (!filtersContainer) return;
 
-  Array.from(filtersContainer.querySelectorAll('[data-stage-element]')).forEach((el) => {
-    (el as HTMLElement).style.filter = '';
-    (el as HTMLElement).style.opacity = '1';
-  });
+  const nodeList = filtersContainer.querySelectorAll('[data-stage-element]');
+  for (let i = 0; i < nodeList.length; i++) {
+    const el = nodeList[i] as HTMLElement;
+    el.style.filter = '';
+    el.style.opacity = '1';
+  }
 
   console.log('[FiltersPlugin] Cleared filters on all elements');
 }
