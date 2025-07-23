@@ -7,10 +7,11 @@ export function setupFilters(container: HTMLElement) {
   filtersContainer = container;
 
   const allElements = container.querySelectorAll('[data-stage-element]');
-  allElements.forEach((el: Element) => {
-    const htmlEl = el as HTMLElement;
-    htmlEl.style.filter = '';
-    htmlEl.style.opacity = '1';
+  allElements.forEach((el) => {
+    if (el instanceof HTMLElement) {
+      el.style.filter = '';
+      el.style.opacity = '1';
+    }
   });
 
   // Apply filters to all elements that already have metadata.filters
@@ -87,9 +88,11 @@ function clearAllFilters() {
   if (!filtersContainer) return;
 
   const allElements = filtersContainer.querySelectorAll('[data-stage-element]');
-  allElements.forEach((el: Element) => {
-    (el as HTMLElement).style.filter = '';
-    (el as HTMLElement).style.opacity = '1';
+  allElements.forEach((el) => {
+    if (el instanceof HTMLElement) {
+      el.style.filter = '';
+      el.style.opacity = '1';
+    }
   });
 
   console.log('[FiltersPlugin] Cleared filters on all elements');
