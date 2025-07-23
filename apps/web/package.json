@@ -13,12 +13,13 @@
     "@theline/core-renderer": "workspace:*",
     "@theline/shared": "workspace:*",
     "next": "^15.4.1",
+    "next-transpile-modules": "^10.0.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "typescript": "^5.8.3",
     "@types/react": "^19.1.0",
-    "@types/react-dom": "^19.1.1"
+    "@types/react-dom": "^19.1.1",
+    "typescript": "^5.8.3"
   }
 }
