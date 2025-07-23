@@ -9,7 +9,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && pnpm run postbuild",
+    "postbuild": "cp src/index.d.ts dist/index.d.ts || true",
     "dev": "tsc -p tsconfig.json --watch",
     "clean": "tsc --build --clean"
   },
