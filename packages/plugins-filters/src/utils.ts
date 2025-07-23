@@ -6,7 +6,7 @@ let filtersContainer: HTMLElement | null = null;
 export function setupFilters(container: HTMLElement) {
   filtersContainer = container;
 
-  const allElements = container.querySelectorAll('[data-stage-element]');
+  const allElements = container.querySelectorAll('[data-stage-element]') as NodeListOf<HTMLElement>;
   allElements.forEach((el) => {
     if (el instanceof HTMLElement) {
       el.style.filter = '';
@@ -87,7 +87,7 @@ function applyFiltersToElement(elementId: string, filters: Partial<FiltersState>
 function clearAllFilters() {
   if (!filtersContainer) return;
 
-  const allElements = filtersContainer.querySelectorAll('[data-stage-element]');
+  const allElements = filtersContainer.querySelectorAll('[data-stage-element]') as NodeListOf<HTMLElement>;
   allElements.forEach((el) => {
     if (el instanceof HTMLElement) {
       el.style.filter = '';
