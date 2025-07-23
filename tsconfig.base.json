@@ -13,7 +13,8 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@theline/shared": ["packages/shared/dist"],
+      "@theline/shared": ["packages/shared/src/index.ts"],
+      "@theline/shared/*": ["packages/shared/src/*"],
       "@theline/plugins-dragdrop": ["packages/plugins-dragdrop/dist"],
       "@theline/plugins-interact": ["packages/plugins-interact/dist"],
       "@theline/plugins-filters": ["packages/plugins-filters/dist"],
