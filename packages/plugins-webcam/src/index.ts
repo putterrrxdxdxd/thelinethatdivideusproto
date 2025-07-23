@@ -12,3 +12,4 @@ const WebcamPlugin = {
 };
 
 export default WebcamPlugin;
+export { setupWebcam, teardownWebcam } from './utils.js';
