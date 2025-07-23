@@ -2,6 +2,8 @@ import { stageState } from '@theline/shared';
 import type { StageElement } from '@theline/shared';
 import { setupAudio, teardownAudio } from './utils.js';
 
+export * from './utils.js';
+
 const AudioPlugin = {
   mount(container: HTMLElement) {
     console.log('[AudioPlugin] Mounted');

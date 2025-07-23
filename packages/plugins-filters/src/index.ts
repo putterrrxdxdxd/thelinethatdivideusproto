@@ -33,3 +33,5 @@ export type FiltersState = {
   invert?: boolean;      // true/false
   opacity?: number;      // 0–1
 };
+
+export * from './utils.js';

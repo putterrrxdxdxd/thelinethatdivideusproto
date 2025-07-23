@@ -11,4 +11,6 @@ const DragDropPlugin = {
   }
 };
 
+export * from './utils.js';
+
 export default DragDropPlugin;

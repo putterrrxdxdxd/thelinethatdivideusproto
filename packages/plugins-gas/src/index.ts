@@ -33,4 +33,5 @@ import {
   };
   
   export default GasPlugin;
+  export * from './utils.js';
   
