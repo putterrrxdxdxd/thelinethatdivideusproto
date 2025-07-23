@@ -3,6 +3,11 @@
     "version": "1.0.0",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
+    "typesVersions": {
+      "*": {
+        "*": ["dist/index.d.ts"]
+      }
+    },
     "files": ["dist"],
     "scripts": {
       "prebuild": "rm -rf dist",
