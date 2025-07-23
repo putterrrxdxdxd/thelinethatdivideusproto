@@ -1,4 +1,6 @@
-const withTM = require('next-transpile-modules')([
+import withTM from 'next-transpile-modules';
+
+const withTranspileModules = withTM([
   '@theline/shared',
   '@theline/plugins-audio',
   '@theline/plugins-dragdrop',
@@ -15,4 +17,4 @@ const nextConfig = {
   // ...your existing config
 };
 
-module.exports = withTM(nextConfig);
+export default withTranspileModules(nextConfig);
