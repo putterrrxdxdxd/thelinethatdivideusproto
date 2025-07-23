@@ -75,12 +75,30 @@ importers:
 
   apps/core-renderer:
     dependencies:
+      '@theline/plugins-audio':
+        specifier: workspace:*
+        version: link:../../packages/plugins-audio
       '@theline/plugins-dragdrop':
         specifier: workspace:*
         version: link:../../packages/plugins-dragdrop
+      '@theline/plugins-filters':
+        specifier: workspace:*
+        version: link:../../packages/plugins-filters
+      '@theline/plugins-gas':
+        specifier: workspace:*
+        version: link:../../packages/plugins-gas
+      '@theline/plugins-image':
+        specifier: workspace:*
+        version: link:../../packages/plugins-image
       '@theline/plugins-interact':
         specifier: workspace:*
         version: link:../../packages/plugins-interact
+      '@theline/plugins-video':
+        specifier: workspace:*
+        version: link:../../packages/plugins-video
+      '@theline/plugins-webcam':
+        specifier: workspace:*
+        version: link:../../packages/plugins-webcam
       '@theline/shared':
         specifier: workspace:*
         version: link:../../packages/shared
@@ -122,6 +140,9 @@ importers:
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
+      '@theline/core-renderer':
+        specifier: workspace:*
+        version: link:../core-renderer
       next:
         specifier: ^15.4.1
         version: 15.4.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)

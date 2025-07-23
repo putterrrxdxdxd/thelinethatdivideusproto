@@ -6,7 +6,15 @@
     "baseUrl": ".",
     "paths": {
       "@theline/shared": ["packages/shared/dist"],
-      "@theline/shared/*": ["packages/shared/dist/*"]
+      "@theline/shared/*": ["packages/shared/dist/*"],
+      "@theline/plugins-filters": ["packages/plugins-filters/dist"],
+      "@theline/plugins-gas": ["packages/plugins-gas/dist"],
+      "@theline/plugins-audio": ["packages/plugins-audio/dist"],
+      "@theline/plugins-video": ["packages/plugins-video/dist"],
+      "@theline/plugins-image": ["packages/plugins-image/dist"],
+      "@theline/plugins-dragdrop": ["packages/plugins-dragdrop/dist"],
+      "@theline/plugins-interact": ["packages/plugins-interact/dist"],
+      "@theline/plugins-webcam": ["packages/plugins-webcam/dist"]
     },
     "outDir": "dist",
     "rootDir": ".",

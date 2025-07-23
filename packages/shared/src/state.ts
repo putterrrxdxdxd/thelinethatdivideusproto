@@ -1,5 +1,5 @@
-import type { StageElement } from './types';
-import { deepMerge, clone } from './utils';
+import type { StageElement } from './types.js';
+import { deepMerge, clone } from './utils.js';
 
 type StageState = {
   elements: Record<string, StageElement>;

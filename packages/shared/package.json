@@ -2,6 +2,7 @@
   "name": "@theline/shared",
   "version": "1.0.0",
   "description": "Shared state, socket, and types for The Line That Divide Us",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [

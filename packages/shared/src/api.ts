@@ -1,7 +1,7 @@
-import { stageState } from './state';
-import { getSocket } from './socket';
-import { deepMerge } from './utils';
-import type { StageElement } from './types';
+import { stageState } from './state.js';
+import { getSocket } from './socket.js';
+import { deepMerge } from './utils.js';
+import type { StageElement } from './types.js';
 
 // Get singleton socket
 const socket = getSocket();

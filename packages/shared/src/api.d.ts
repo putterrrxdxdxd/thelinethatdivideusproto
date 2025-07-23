@@ -1,4 +1,4 @@
-import type { StageElement } from './types';
+import type { StageElement } from './types.js';
 export declare const api: {
     addElement(element: StageElement): void;
     updateElement(id: string, metadataPatch: Partial<StageElement["metadata"]>): void;

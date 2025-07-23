@@ -1,4 +1,4 @@
-import type { StageElement } from './types';
+import type { StageElement } from './types.js';
 type StageState = {
     elements: Record<string, StageElement>;
     history: Record<string, StageElement>[];
