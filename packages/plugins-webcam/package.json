@@ -10,7 +10,8 @@
       "clean": "tsc --build --clean"
     },
     "dependencies": {
-      "@daily-co/daily-js": "^0.44.1"
+      "@daily-co/daily-js": "^0.44.1",
+      "@theline/shared": "workspace:*"
     }
   }
   
