@@ -23,7 +23,10 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "paths": {
+      "@theline/shared": ["../../packages/shared/dist"]
+    }
   },
   "include": [
     "src",
