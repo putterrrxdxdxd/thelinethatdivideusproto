@@ -16,6 +16,6 @@
     "clean": "tsc --build --clean"
   },
   "dependencies": {
-    "@theline/shared": "*"
+    "@theline/shared": "workspace:*"
   }
 }
