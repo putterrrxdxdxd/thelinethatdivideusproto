@@ -13,6 +13,13 @@
     "dependencies": {
       "@daily-co/daily-js": "^0.44.1",
       "@theline/shared": "workspace:*"
+    },
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "require": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      }
     }
   }
   
