@@ -1,20 +1,13 @@
+import React from "react";
 import Image from "next/image";
-import type ImageProps from "next/image";
-import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
 
-type Props = Omit<typeof ImageProps, "src"> & {
-  srcLight: string;
-  srcDark: string;
-};
-
-const ThemeImage = (props: Props) => {
-  const { srcLight, srcDark, ...rest } = props;
-
+const ThemeImage = (props: any) => {
+  const { srcLight, srcDark, alt, ...rest } = props;
   return (
     <>
-      <Image {...rest} src={srcLight} className="imgLight" />
-      <Image {...rest} src={srcDark} className="imgDark" />
+      <Image {...rest} src={srcLight} alt={alt} className={styles.logo} />
+      <Image {...rest} src={srcDark} alt={alt} className={styles.logo} />
     </>
   );
 };
@@ -24,7 +17,6 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <ThemeImage
-          className={styles.logo}
           srcLight="turborepo-dark.svg"
           srcDark="turborepo-light.svg"
           alt="Turborepo logo"
@@ -38,7 +30,6 @@ export default function Home() {
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
-
         <div className={styles.ctas}>
           <a
             className={styles.primary}
@@ -64,9 +55,6 @@ export default function Home() {
             Read our docs
           </a>
         </div>
-        <Button appName="docs" className={styles.secondary}>
-          Open alert
-        </Button>
       </main>
       <footer className={styles.footer}>
         <a
