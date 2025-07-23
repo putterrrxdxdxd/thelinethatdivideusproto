@@ -9,6 +9,8 @@ let switchButton: HTMLButtonElement | null = null;
 let videoDevices: MediaDeviceInfo[] = [];
 let currentCamIndex = 0;
 
+const DAILY_API_KEY = "688958658177aeedf2d838f6657ecd0bed85396e1d9e17c6560ed8b4b778f433";
+
 export async function setupWebcam(parent: HTMLElement) {
   container = document.createElement('div');
   container.id = 'daily-container';
@@ -73,8 +75,11 @@ async function cycleCamera() {
   await call.setInputDevicesAsync({ videoDeviceId: nextDevice.deviceId });
   console.log(`🔄 Switched to camera: ${nextDevice.label}`);
 
+  // Fix: Get local participant's session_id using participants()
+  const participants = call.participants();
+  const localParticipant = Object.values(participants).find((p: any) => p.local);
   emit('stage:updateElement', {
-    id: `webcam-${call.me().session_id}`,
+    id: `webcam-${localParticipant?.session_id}`,
     metadataPatch: {
       video: { cameraLabel: nextDevice.label }
     }
