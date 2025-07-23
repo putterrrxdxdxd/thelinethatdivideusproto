@@ -7,7 +7,7 @@ export function setupFilters(container: HTMLElement) {
   filtersContainer = container;
 
   const allElements = container.querySelectorAll('[data-stage-element]') as NodeListOf<HTMLElement>;
-  allElements.forEach((el) => {
+  allElements.forEach((el: HTMLElement) => {
     if (el instanceof HTMLElement) {
       el.style.filter = '';
       el.style.opacity = '1';
@@ -88,7 +88,7 @@ function clearAllFilters() {
   if (!filtersContainer) return;
 
   const allElements = filtersContainer.querySelectorAll('[data-stage-element]') as NodeListOf<HTMLElement>;
-  allElements.forEach((el) => {
+  allElements.forEach((el: HTMLElement) => {
     if (el instanceof HTMLElement) {
       el.style.filter = '';
       el.style.opacity = '1';
