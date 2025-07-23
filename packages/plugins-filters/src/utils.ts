@@ -6,12 +6,9 @@ let filtersContainer: HTMLElement | null = null;
 export function setupFilters(container: HTMLElement) {
   filtersContainer = container;
 
-  const allElements = container.querySelectorAll('[data-stage-element]') as NodeListOf<HTMLElement>;
-  allElements.forEach((el: HTMLElement) => {
-    if (el instanceof HTMLElement) {
-      el.style.filter = '';
-      el.style.opacity = '1';
-    }
+  Array.from(container.querySelectorAll('[data-stage-element]')).forEach((el) => {
+    (el as HTMLElement).style.filter = '';
+    (el as HTMLElement).style.opacity = '1';
   });
 
   // Apply filters to all elements that already have metadata.filters
@@ -87,12 +84,9 @@ function applyFiltersToElement(elementId: string, filters: Partial<FiltersState>
 function clearAllFilters() {
   if (!filtersContainer) return;
 
-  const allElements = filtersContainer.querySelectorAll('[data-stage-element]') as NodeListOf<HTMLElement>;
-  allElements.forEach((el: HTMLElement) => {
-    if (el instanceof HTMLElement) {
-      el.style.filter = '';
-      el.style.opacity = '1';
-    }
+  Array.from(filtersContainer.querySelectorAll('[data-stage-element]')).forEach((el) => {
+    (el as HTMLElement).style.filter = '';
+    (el as HTMLElement).style.opacity = '1';
   });
 
   console.log('[FiltersPlugin] Cleared filters on all elements');
