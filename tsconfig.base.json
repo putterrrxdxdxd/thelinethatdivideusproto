@@ -1,29 +1,19 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "target": "ES2020",
-    "composite": true,               // 👈 Fixed
-    "lib": ["DOM", "ES2020", "ES2015"],
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "allowSyntheticDefaultImports": true,
-    "jsx": "react-jsx",
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "baseUrl": ".",
     "paths": {
       "@theline/shared": ["packages/shared/dist"],
-      "@theline/shared/*": ["packages/shared/dist/*"],
-      "@theline/plugins-dragdrop": ["packages/plugins-dragdrop/dist"],
-      "@theline/plugins-interact": ["packages/plugins-interact/dist"],
-      "@theline/plugins-filters": ["packages/plugins-filters/dist"],
-      "@theline/plugins-gas": ["packages/plugins-gas/dist"],
-      "@theline/plugins-audio": ["packages/plugins-audio/dist"],
-      "@theline/plugins-video": ["packages/plugins-video/dist"],
-      "@theline/plugins-image": ["packages/plugins-image/dist"],
-      "@repo/ui": ["packages/ui/dist"]
-    }
+      "@theline/shared/*": ["packages/shared/dist/*"]
+    },
+    "outDir": "dist",
+    "rootDir": ".",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["packages", "apps"],
   "exclude": ["node_modules", "dist"]
