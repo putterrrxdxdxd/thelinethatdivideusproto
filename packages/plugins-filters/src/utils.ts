@@ -129,7 +129,7 @@ function onLeave(e: MouseEvent) {
 }
 
 function onKeyDown(e: KeyboardEvent) {
-  const el = hoveredElement;
+  const el: HTMLElement | null = hoveredElement;
   if (!el) return;
   const id = el.dataset.id;
   if (!id) return;
