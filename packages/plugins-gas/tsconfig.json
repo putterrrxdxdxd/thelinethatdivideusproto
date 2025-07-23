@@ -6,7 +6,9 @@
     "module": "ESNext",
     "moduleResolution": "node",
     "esModuleInterop": false,
-    "allowSyntheticDefaultImports": false
+    "allowSyntheticDefaultImports": false,
+    "declaration": true,
+    "declarationDir": "dist"
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]

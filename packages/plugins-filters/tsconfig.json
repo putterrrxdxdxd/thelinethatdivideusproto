@@ -8,7 +8,9 @@
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": false,
     "strict": false,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "declaration": true,
+    "declarationDir": "dist"
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]

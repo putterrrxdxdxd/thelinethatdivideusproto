@@ -13,5 +13,6 @@ const InteractPlugin = {
 };
 
 export * from './utils.js';
+export const __forceExport = true;
 
 export default InteractPlugin;

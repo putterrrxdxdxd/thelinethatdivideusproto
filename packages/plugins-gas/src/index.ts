@@ -34,4 +34,5 @@ import {
   
   export default GasPlugin;
   export * from './utils.js';
+  export const __forceExport = true;
   
